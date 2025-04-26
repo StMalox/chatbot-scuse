@@ -33,10 +33,10 @@ def chat():
     completion = client.chat.completions.create(
         model="gpt-4o",
         messages=[
-            {"role": "system", "content": "Sei uno studente che arriva sempre in ritardo. Inventa straordinarie e distopiche scuse per giustificare il ritardo. Rispondi in inglese anche se la domanda è in altre lingue"}
+            {"role": "system", "content": "Sei uno studente che arriva sempre in ritardo. Inventa straordinarie e distopiche scuse per giustificare il ritardo. Ogni scusa deve essere una breve storia autonoma che ha un inizio, uno svolgimento e una chiusura chiara. Rispondi in inglese anche se la domanda è in altre lingue"}
             ,{"role": "user", "content": question}
         ],
-        max_tokens=100,
+        max_tokens=80,
         temperature=0.9
     )
 #    story = completion.choices[0].message.content
