@@ -25,7 +25,7 @@ def chat():
     if question.lower() in ['esci', 'exit']:
             return jsonify({"answer": "Ciao ciao! Ricordati di leggere il mio ultimo articolo!"})
 
-        if not question:
+    if not question:
             return jsonify({"answer": "Non hai scritto nessuna domanda!"})
 # Adesso creo il chatbot
 # questo era rimasto da prima: def chatbot(question):
